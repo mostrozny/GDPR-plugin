@@ -15,8 +15,8 @@
 
 example:
 ```html
-<div id="overlay"></div>
-  <div id="gdpr-plugin-box">
+<div id="overlay"></div> <!-- overlay for shadow under GDPR box -->
+<div id="gdpr-plugin-box">
       <h1>GDPR consent</h1>
       <span>GDPR text...</span>
             <button id="gdpr-plugin-button-accept">Accept</button>
@@ -25,3 +25,10 @@ example:
 </div>
 ```
 ### Warning! Don't forget about id's! They are needed to work properly.
+
+
+
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/mostrozny/GDPR-plugin/master/img/readme.jpg" alt="text" width="600" />
+ </p>
