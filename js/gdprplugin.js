@@ -6,8 +6,6 @@ window.onload=function() {
     const acceptButton = document.querySelector('#gdpr-plugin-button-accept');
     const declineButton = document.querySelector('#gdpr-plugin-button-decline');
 
-
-
     //searching cookie by name
     function showCookie(name) {
         if (document.cookie !== "") {
@@ -25,7 +23,7 @@ window.onload=function() {
 
     //checking the cookie
     function acceptedCookie () {
-       if (showCookie("gdprconsent") === "true") {
+       if (showCookie("gdprconsent") === "true" || showCookie("gdprconsent") === "false") {
            hideBox();
        } else {
            //blocking overflow when plugin loaded.
@@ -34,29 +32,23 @@ window.onload=function() {
    }
     acceptedCookie();
 
+
+    Date.prototype.addDays = function(days) {
+        var date = new Date(this.valueOf());
+        date.setDate(date.getDate() + days);
+        return date;
+    }
+
     function gdprDeclineAction() {
         hideBox();
-        console.log("Decline");
-        Date.prototype.addDays = function(days) {
-            var date = new Date(this.valueOf());
-            date.setDate(date.getDate() + days);
-            return date;
-        }
         var date = new Date();
-        document.cookie = `gdprconsent=false; expires=${date.addDays(0)}; path=/`;
+        document.cookie = `gdprconsent=false; expires=${date.addDays(1)}; path=/`;
     }
 
     function gdprAcceptAction() {
         hideBox();
-        console.log("Accept");
-        Date.prototype.addDays = function(days) {
-            var date = new Date(this.valueOf());
-            date.setDate(date.getDate() + days);
-            return date;
-        }
         var date = new Date();
-       document.cookie = `gdprconsent=true; expires=${date.addDays(7)}; path=/`;
-       console.log(document.cookie);
+        document.cookie = `gdprconsent=true; expires=${date.addDays(1)}; path=/`;
     }
 
     //hidding box function
