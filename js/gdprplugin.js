@@ -25,7 +25,7 @@ window.onload=function() {
 
     //checking the cookie
     function acceptedCookie () {
-       if (showCookie("accepted") === "true") {
+       if (showCookie("gdprconsent") === "true") {
            hideBox();
        } else {
            //blocking overflow when plugin loaded.
@@ -43,7 +43,7 @@ window.onload=function() {
             return date;
         }
         var date = new Date();
-        document.cookie = `accepted=false; expires=${date.addDays(0)}; path=/`;
+        document.cookie = `gdprconsent=false; expires=${date.addDays(0)}; path=/`;
     }
 
     function gdprAcceptAction() {
@@ -55,7 +55,7 @@ window.onload=function() {
             return date;
         }
         var date = new Date();
-       document.cookie = `accepted=true; expires=${date.addDays(7)}; path=/`;
+       document.cookie = `gdprconsent=true; expires=${date.addDays(7)}; path=/`;
        console.log(document.cookie);
     }
 
