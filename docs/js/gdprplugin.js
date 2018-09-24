@@ -34,20 +34,20 @@ window.onload=function() {
 
 
     Date.prototype.addDays = function(days) {
-        var date = new Date(this.valueOf());
+        const date = new Date(this.valueOf());
         date.setDate(date.getDate() + days);
         return date;
     }
 
     function gdprDeclineAction() {
         hideBox();
-        var date = new Date();
+        const date = new Date();
         document.cookie = `gdprconsent=false; expires=${date.addDays(1)}; path=/`;
     }
 
     function gdprAcceptAction() {
         hideBox();
-        var date = new Date();
+        const date = new Date();
         document.cookie = `gdprconsent=true; expires=${date.addDays(1)}; path=/`;
     }
 
