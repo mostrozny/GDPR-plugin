@@ -3,7 +3,7 @@
 ## What is this?
 
  This is General Data Protection Regulation plugin for your website. Lightweight, easy-in-use, written in VanillaJS & CSS. 
- After accepting the consent, the window does not pop up for 7 days. This plugin use cookies to save you consent.
+ After choose the consent, the window does not pop up for 24 hours. This plugin use cookies to save you consent.
 
 ## How to use?
 
@@ -35,5 +35,5 @@ example:
 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/mostrozny/GDPR-plugin/master/img/readme.jpg" alt="text" width="600" />
+<img src="https://raw.githubusercontent.com/mostrozny/GDPR-plugin/master/img/rdm.jpg" alt="text" width="600" />
  </p>
