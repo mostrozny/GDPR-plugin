@@ -7,7 +7,7 @@
 
 ## How to use?
 
- 1. Download plugin, put gdprplugin.js to your JS folder and gdprplugin.css to your Styles folder. 
+ 1. Download plugin, put gdprplugin.js from js folder to your JS folder and gdprplugin.css from css folder to your Styles folder. 
  2. Put these lines in  ```<head />``` section: 
  
  example:
