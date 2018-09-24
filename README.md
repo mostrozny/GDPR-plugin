@@ -1,5 +1,11 @@
 # GDPR-plugin
 
+
+<p align="center"><a href="https://mostrozny.github.io/GDPR-plugin/"><b>Click me to see demo!</b></a></p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/mostrozny/GDPR-plugin/master/img/rdm.jpg" alt="text" width="600" />
+ </p>
+ 
 ## What is this?
 
  This is General Data Protection Regulation plugin for your website. Lightweight, easy-in-use, written in VanillaJS & CSS. 
@@ -34,6 +40,4 @@ example:
 
 
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/mostrozny/GDPR-plugin/master/img/rdm.jpg" alt="text" width="600" />
- </p>
+
