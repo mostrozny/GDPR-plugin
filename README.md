@@ -1,5 +1,10 @@
 # GDPR-plugin
 
+## What is this?
+
+ This is General Data Protection Regulation plugin for your website. Lightweight, easy-in-use, written in VanillaJS & CSS. 
+ After accepting the consent, the window does not pop up for 7 days. This plugin use cookies to save you consent.
+
 ## How to use?
 
  1. Download plugin, put gdprplugin.js to your JS folder and gdprplugin.css to your Styles folder. 
